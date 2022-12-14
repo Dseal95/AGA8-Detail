@@ -323,7 +323,7 @@ def DensityDetail(P, T):
 
                 return Z, P2, D, ierr, herr
 
-    # failed to converge (rest D back to ideal gas density)
+    # failed to converge (reset D back to ideal gas density)
     D = P / R / T
     ierr = 1
     herr = (
