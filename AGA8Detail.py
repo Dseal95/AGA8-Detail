@@ -1,4 +1,4 @@
-"""AGA8Detail.py module contains the """
+"""AGA8Detail.py module contains the functionality used in the DETAIL method."""
 
 import math
 
