@@ -1,12 +1,4 @@
-"""static.py module contains constants used in the AGA8 DETAIL method."""
-
-# GLOBAL CONSTANTS
-NTerms = 58
-NcDetail = 21
-MaxFlds = 21
-epsilon = 1e-15
-R = 8.31451
-tolr = 0.0000001
+"""molecule.py module contains gas molecule constants used in the AGA8 DETAIL method."""
 
 MmDetail = {
     "Methane": 16.043,
