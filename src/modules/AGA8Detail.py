@@ -4,16 +4,17 @@ import math
 
 import numpy as np
 
-from initialise import (initialise_an, initialise_bn, initialise_Bs,
-                        initialise_Bsnij2, initialise_Csn, initialise_Ei,
-                        initialise_Fi, initialise_fn, initialise_Gi,
-                        initialise_gn, initialise_i25_arrays,
-                        initialise_ij5_arrays, initialise_ij_arrays,
-                        initialise_Ki, initialise_kn, initialise_n0i,
-                        initialise_Qi, initialise_qn, initialise_Si,
-                        initialise_sn, initialise_th0i, initialise_Tun,
-                        initialise_un, initialise_Wi, initialise_wn)
-from molecule import MmDetail
+from modules.initialise import (initialise_an, initialise_bn, initialise_Bs,
+                                initialise_Bsnij2, initialise_Csn,
+                                initialise_Ei, initialise_Fi, initialise_fn,
+                                initialise_Gi, initialise_gn,
+                                initialise_i25_arrays, initialise_ij5_arrays,
+                                initialise_ij_arrays, initialise_Ki,
+                                initialise_kn, initialise_n0i, initialise_Qi,
+                                initialise_qn, initialise_Si, initialise_sn,
+                                initialise_th0i, initialise_Tun, initialise_un,
+                                initialise_Wi, initialise_wn)
+from modules.molecule import MmDetail
 
 
 class AGA8Detail:
