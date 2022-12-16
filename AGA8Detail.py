@@ -131,14 +131,10 @@ class AGA8Detail:
         return self
 
     def MolarMassDetail(self):
-        """Calculate the molar mass using: M = Σ mi * xi where,
-        xi = Mole fraction of ith component in gas mixture
-        mi = Molar mass of ith component
-        i = 21 (gas components)
-
-        Updates the global variable MM.
-        """
-        for xi in list(zip(self.x[1:], self.MmDetail.keys())):
+        """Calculate the M using (M = Σ mi * xi) where xi = mole fraction of ith component in gas mixture and mi = molar mass of ith component."""
+        for xi in list(
+            zip(self.x[1:], self.MmDetail.keys())
+        ):  # [:1] to avoid considering dummy 0 at index 0 in list
             self.MM += xi[0] * self.MmDetail[xi[1]]
 
         return self
@@ -202,7 +198,7 @@ class AGA8Detail:
     def AlphaRDetail(self):
         """Calculate the derivatives of the residual Helmholtz energy (ar) with respect to T and D."""
         # reset ar @ 0 each call
-        self.ar = [[0 for _ in range(4)] for _ in range(4)]  
+        self.ar = [[0 for _ in range(4)] for _ in range(4)]
 
         if np.abs(self.T - self.Told) > 0.0000001:
             for n in range(1, self.NTerms + 1):
@@ -282,7 +278,6 @@ class AGA8Detail:
         """Calculate pressure as a function of temperature and density.  The derivative d(P)/d(D) is also calculated."""
 
         self.AlphaRDetail()  # updates ar with new density, D
-
         self.Z = (
             1 + self.ar[0][1] / self.R / self.T
         )  # ar[0][1] is the first derivative of alpha(r) with respect to density
