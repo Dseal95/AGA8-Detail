@@ -28,15 +28,10 @@ if "__main__" == __name__:
         0.007,
         0.001,
     ]
-    Z, P2, D, _, _ = AGA8Detail(x, P=P, T=T)
 
-    print(
-        "\n------------------------------------------ AGA8 DETAIL ------------------------------------------"
-    )
-    print(
-        f"\nCalculaing compressibility factor, Z for P={P} (Kpa), T={T} (K) and x using AGA8 DETAIL method:\n"
-    )
-    print(f"Z = {Z}\nP2(Kpa) = {P2}\nP2(barg) = {(P2/100)+1.01325}\n\u03c1 = {D}\n")
-    print(
-        "-------------------------------------------------------------------------------------------------\n"
-    )
+    AGA8D = AGA8Detail(P=P, T=T, x=x).run()
+
+    print("\n-----------------------------------AGA8 DETAIL-----------------------------------")
+    print(f"Calculaing Z for P={P} (Kpa), T={T} (K) and x using AGA8 DETAIL method:\n")
+    print(f"Z = {AGA8D.Z}\nP2(Kpa) = {AGA8D.P2}\nP2(barg) = {(AGA8D.P2/100)+1.01325}\n\u03c1 = {AGA8D.D}")
+    print("---------------------------------------------------------------------------------\n")
