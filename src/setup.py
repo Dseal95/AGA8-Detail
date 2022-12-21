@@ -1,3 +1,5 @@
+"""setup.py module details the repository's custom package(s)."""
+
 from setuptools import find_packages, setup
 
 with open("requirements.txt") as requirement_file:

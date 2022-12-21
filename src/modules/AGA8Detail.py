@@ -21,6 +21,7 @@ class AGA8Detail:
     """Class to approximate the compressibility factor, Z for a gas given its composition x, Pressure, P and temperature, T using AGA8 Detail method."""
 
     def __init__(self, P, T, x):
+        """Initialisation."""
         # constant terms
         self.NTerms = 58
         self.NcDetail = 21
@@ -159,7 +160,7 @@ class AGA8Detail:
                 for n in range(1, 18 + 1):
                     self.Bs[n] = (
                         self.Bs[n] + xi2 * self.Bsnij2[i][i][n]
-                    )  #  Pure fluid contributions to second virial coefficient
+                    )  # Pure fluid contributions to second virial coefficient
 
         self.K3 = math.pow(self.K3, 2)
         self.U = math.pow(self.U, 2)
@@ -277,7 +278,6 @@ class AGA8Detail:
 
     def PressureDetail(self):
         """Calculate pressure as a function of temperature and density.  The derivative d(P)/d(D) is also calculated."""
-
         self.AlphaRDetail()  # updates ar with new density, D
         self.Z = (
             1 + self.ar[0][1] / self.R / self.T
@@ -291,7 +291,6 @@ class AGA8Detail:
 
     def DensityDetail(self):
         """Calculate density as a function of temperature, T and pressure, P. This is an iterative routine that calls PressureDetail()."""
-
         if np.abs(self.P) < self.epsilon:
             # failed to converge
             self.Z = None
@@ -356,7 +355,7 @@ class AGA8Detail:
         return self
 
     def run(self):
-        """Wrapper function to call the AGA8 DETAIL method for a given P, T and x."""
+        """Call the AGA8 DETAIL method for a given P, T and x."""
         # 1. Initialise constants and parameters for DETAIL
         self.SetupDetail()
         # 2. Calculate the molar mass from the input gas composition

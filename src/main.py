@@ -1,3 +1,5 @@
+"""Program to approximate gas compressibility factors, Z using AGA8 Detail method."""
+
 from modules.AGA8Detail import AGA8Detail
 
 if "__main__" == __name__:

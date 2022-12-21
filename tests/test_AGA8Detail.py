@@ -1,5 +1,8 @@
-import pytest
+"""Test AGA8 Detail implementation."""
+
 from modules.AGA8Detail import AGA8Detail
+
+import pytest
 
 
 def test_AGA8_DETAIL_C_Example():
