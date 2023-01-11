@@ -1,9 +1,9 @@
 """Initialise.py module contains all functionality to initialise the parameters and constants used in the AGA8 DETAIL method."""
 
 
-def initialise_an(NTerms):
-    """"""
-    an = [0] * (NTerms + 1)
+def initialise_an(n):
+    """Initialise an(n+1, 1) array with known initial values."""
+    an = [0] * (n + 1)
     # add initial values
     an[1] = 0.1538326
     an[2] = 1.341953
@@ -67,9 +67,9 @@ def initialise_an(NTerms):
     return an
 
 
-def initialise_bn(NTerms):
-    """"""
-    bn = [0] * (NTerms + 1)
+def initialise_bn(n):
+    """Initialise bn(n+1, 1) array with known initial values."""
+    bn = [0] * (n + 1)
     # add initial values
     bn[1] = 1
     bn[2] = 1
@@ -133,9 +133,9 @@ def initialise_bn(NTerms):
     return bn
 
 
-def initialise_kn(NTerms):
-    """"""
-    kn = [0] * (NTerms + 1)
+def initialise_kn(n):
+    """Initialise kn(n+1, 1) array with known initial values."""
+    kn = [0] * (n + 1)
     # add initial values
     kn[13] = 3
     kn[14] = 2
@@ -179,9 +179,9 @@ def initialise_kn(NTerms):
     return kn
 
 
-def initialise_un(NTerms):
-    """"""
-    un = [0] * (NTerms + 1)
+def initialise_un(n):
+    """Initialise un(n+1, 1) array with known initial values."""
+    un = [0] * (n + 1)
     # add initial values
     un[1] = 0
     un[2] = 0.5
@@ -245,9 +245,9 @@ def initialise_un(NTerms):
     return un
 
 
-def initialise_fn(NTerms):
-    """"""
-    fn = [0] * (NTerms + 1)
+def initialise_fn(n):
+    """Initialise fn(n+1, 1) array with known initial values."""
+    fn = [0] * (n + 1)
     fn[13] = 1
     fn[27] = 1
     fn[30] = 1
@@ -256,9 +256,9 @@ def initialise_fn(NTerms):
     return fn
 
 
-def initialise_gn(NTerms):
-    """"""
-    gn = [0] * (NTerms + 1)
+def initialise_gn(n):
+    """Initialise gn(n+1, 1) array with known initial values."""
+    gn = [0] * (n + 1)
     # add initial values
     gn[5] = 1
     gn[6] = 1
@@ -274,9 +274,9 @@ def initialise_gn(NTerms):
     return gn
 
 
-def initialise_qn(NTerms):
-    """"""
-    qn = [0] * (NTerms + 1)
+def initialise_qn(n):
+    """Initialise qn(n+1, 1) array with known initial values."""
+    qn = [0] * (n + 1)
     # add initial values
     qn[7] = 1
     qn[16] = 1
@@ -292,9 +292,9 @@ def initialise_qn(NTerms):
     return qn
 
 
-def initialise_sn(NTerms):
-    """"""
-    sn = [0] * (NTerms + 1)
+def initialise_sn(n):
+    """Initialise sn(n+1, 1) array with known initial values."""
+    sn = [0] * (n + 1)
     # add initial values
     sn[8] = 1
     sn[9] = 1
@@ -302,9 +302,9 @@ def initialise_sn(NTerms):
     return sn
 
 
-def initialise_wn(NTerms):
-    """"""
-    wn = [0] * (NTerms + 1)
+def initialise_wn(n):
+    """Initialise wn(n+1, 1) array with known initial values."""
+    wn = [0] * (n + 1)
     # add initial values
     wn[10] = 1
     wn[11] = 1
@@ -313,9 +313,9 @@ def initialise_wn(NTerms):
     return wn
 
 
-def initialise_Ei(MaxFlds):
-    """"""
-    Ei = [0] * (MaxFlds + 1)
+def initialise_Ei(n):
+    """Initialise Ei(n+1, 1) array with known initial values."""
+    Ei = [0] * (n + 1)
     # add initial values
     Ei[1] = 151.3183
     Ei[2] = 99.73778
@@ -342,18 +342,18 @@ def initialise_Ei(MaxFlds):
     return Ei
 
 
-def initialise_Fi(MaxFlds):
-    """"""
-    Fi = [0] * (MaxFlds + 1)
+def initialise_Fi(n):
+    """Initialise Fi(n+1, 1) array with zeros."""
+    Fi = [0] * (n + 1)
     # add initial values
     Fi[15] = 1  # high temperature parameter
 
     return Fi
 
 
-def initialise_Gi(MaxFlds):
-    """"""
-    Gi = [0] * (MaxFlds + 1)
+def initialise_Gi(n):
+    """Initialise Gi(n+1, 1) array with known initial values."""
+    Gi = [0] * (n + 1)
     # add initial values
     Gi[2] = 0.027815
     Gi[3] = 0.189065
@@ -377,9 +377,9 @@ def initialise_Gi(MaxFlds):
     return Gi
 
 
-def initialise_Ki(MaxFlds):
-    """"""
-    Ki = [0] * (MaxFlds + 1)
+def initialise_Ki(n):
+    """Initialise Ki(n+1, 1) array with known initial values."""
+    Ki = [0] * (n + 1)
 
     Ki[1] = 0.4619255
     Ki[2] = 0.4479153
@@ -406,9 +406,9 @@ def initialise_Ki(MaxFlds):
     return Ki
 
 
-def initialise_Qi(MaxFlds):
-    """"""
-    Qi = [0] * (MaxFlds + 1)
+def initialise_Qi(n):
+    """Initialise Qi(n+1, 1) array with known initial values."""
+    Qi = [0] * (n + 1)
     # add initial values
     Qi[3] = 0.69
     Qi[18] = 1.06775
@@ -417,9 +417,9 @@ def initialise_Qi(MaxFlds):
     return Qi
 
 
-def initialise_Si(MaxFlds):
-    """"""
-    Si = [0] * (MaxFlds + 1)
+def initialise_Si(n):
+    """Initialise Si(n+1, 1) array with known initial values."""
+    Si = [0] * (n + 1)
     # add initial values
     Si[18] = 1.5822  # Dipole parameter
     Si[19] = 0.39  # Dipole parameter
@@ -427,9 +427,9 @@ def initialise_Si(MaxFlds):
     return Si
 
 
-def initialise_Wi(MaxFlds):
-    """"""
-    Wi = [0] * (MaxFlds + 1)
+def initialise_Wi(n):
+    """Initialise Wi(n+1, 1) array with known initial values."""
+    Wi = [0] * (n + 1)
     # add initial values
     Wi[18] = 1  # Association parameter
 
@@ -437,7 +437,7 @@ def initialise_Wi(MaxFlds):
 
 
 def initialise_Eij(Eij):
-    """"""
+    """Initialise input array Eij(i, j) with known initial conditions."""
     Eij[1][2] = 0.97164
     Eij[1][3] = 0.960644
     Eij[1][5] = 0.994635
@@ -502,7 +502,7 @@ def initialise_Eij(Eij):
 
 
 def initialise_Kij(Kij):
-    """"""
+    """Initialise input array Kij(i, j) with known initial conditions."""
     # size parameters
     Kij[1][2] = 1.00363
     Kij[1][3] = 0.995933
@@ -540,7 +540,7 @@ def initialise_Kij(Kij):
 
 
 def initialise_Uij(Uij):
-    """"""
+    """Initialise input array Uij(i, j) with known initial conditions."""
     # Conformal energy parameters
     Uij[1][2] = 0.886106
     Uij[1][3] = 0.963827
@@ -585,7 +585,7 @@ def initialise_Uij(Uij):
 
 
 def initialise_Gij(Gij):
-    """"""
+    """Initialise input array Gij(i, j) with known initial conditions."""
     # Orientation parameters
     Gij[1][3] = 0.807653
     Gij[1][15] = 1.95731
@@ -596,16 +596,16 @@ def initialise_Gij(Gij):
     return Gij
 
 
-def initialise_ij_arrays(MaxFlds):
-    """"""
-    Eij = [[0 for _ in range(MaxFlds + 1)] for _ in range(MaxFlds + 1)]
-    Uij = [[0 for _ in range(MaxFlds + 1)] for _ in range(MaxFlds + 1)]
-    Kij = [[0 for _ in range(MaxFlds + 1)] for _ in range(MaxFlds + 1)]
-    Gij = [[0 for _ in range(MaxFlds + 1)] for _ in range(MaxFlds + 1)]
+def initialise_ij_arrays(n):
+    """Initialise all ij shape (i, j) arrays for the AGA8 Detail method."""
+    Eij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    Uij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    Kij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    Gij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
 
     # initialise with 1s from the 1st index
-    for i in range(1, MaxFlds + 1):
-        for j in range(1, MaxFlds + 1):
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
             Eij[i][j] = 1
             Uij[i][j] = 1
             Kij[i][j] = 1
@@ -620,9 +620,9 @@ def initialise_ij_arrays(MaxFlds):
     return Eij, Uij, Kij, Gij
 
 
-def initialise_n0i(MaxFlds):
-    """"""
-    n0i = [[0 for _ in range(7 + 1)] for _ in range(MaxFlds + 1)]
+def initialise_n0i(n):
+    """Initialise n0i array of shape (n+1, 7+1) for the AGA8 Detail method."""
+    n0i = [[0 for _ in range(7 + 1)] for _ in range(n + 1)]
     # add initial values
     n0i[1][3] = 4.00088
     n0i[1][4] = 0.76315
@@ -775,9 +775,9 @@ def initialise_n0i(MaxFlds):
     return n0i
 
 
-def initialise_th0i(MaxFlds):
-    """"""
-    th0i = [[0 for _ in range(7 + 1)] for _ in range(MaxFlds + 1)]
+def initialise_th0i(n):
+    """Initialise th0i array of shape (n+1, 7+1) for the AGA8 Detail method."""
+    th0i = [[0 for _ in range(7 + 1)] for _ in range(n + 1)]
     # add initial values
     th0i[1][4] = 820.659
     th0i[1][5] = 178.41
@@ -868,40 +868,40 @@ def initialise_th0i(MaxFlds):
 
 
 def initialise_Bs():
-    """"""
+    """Initialise Bs array(18+1, 1) with zeros."""
     return [0] * (18 + 1)
 
 
-def initialise_Bsnij2(MaxFlds):
-    """"""
+def initialise_Bsnij2(n):
+    """Initialise Bsnij2 array (n, n 18+1) with zeros."""
     return [
-        [[0 for _ in range(18 + 1)] for _ in range(MaxFlds + 1)]
-        for _ in range(MaxFlds + 1)
+        [[0 for _ in range(18 + 1)] for _ in range(n + 1)]
+        for _ in range(n + 1)
     ]
 
 
-def initialise_i25_arrays(MaxFlds):
-    """"""
-    Ki25 = [0] * (MaxFlds + 1)
-    Ei25 = [0] * (MaxFlds + 1)
+def initialise_i25_arrays(n):
+    """Initialise i25 array(n+1, 1) with zeros."""
+    Ki25 = [0] * (n + 1)
+    Ei25 = [0] * (n + 1)
 
     return Ki25, Ei25
 
 
-def initialise_ij5_arrays(MaxFlds):
-    """"""
-    Kij5 = [[0 for _ in range(MaxFlds + 1)] for _ in range(MaxFlds + 1)]
-    Uij5 = [[0 for _ in range(MaxFlds + 1)] for _ in range(MaxFlds + 1)]
-    Gij5 = [[0 for _ in range(MaxFlds + 1)] for _ in range(MaxFlds + 1)]
+def initialise_ij5_arrays(n):
+    """Initialise ij5 arrays shape (n+1, n+1) with zeros."""
+    Kij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    Uij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    Gij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
 
     return Kij5, Uij5, Gij5
 
 
-def initialise_Csn(NTerms):
-    """"""
-    return [0] * (NTerms + 1)
+def initialise_Csn(n):
+    """Initialise Csn array(n+1, 1) with zeros."""
+    return [0] * (n + 1)
 
 
-def initialise_Tun(NTerms):
-    """"""
-    return [0] * (NTerms + 1)
+def initialise_Tun(n):
+    """Initialise Tun array(n+1, 1) with zeros."""
+    return [0] * (n + 1)
