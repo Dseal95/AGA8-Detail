@@ -56,33 +56,33 @@ class AGA8Detail:
 
         # initialise arrays
         self.Bs = initialise_Bs()
-        self.Bsnij2 = initialise_Bsnij2(self.MaxFlds)
-        self.an = initialise_an(self.NTerms)
-        self.bn = initialise_bn(self.NTerms)
-        self.kn = initialise_kn(self.NTerms)
-        self.un = initialise_un(self.NTerms)
-        self.fn = initialise_fn(self.NTerms)
-        self.gn = initialise_gn(self.NTerms)
-        self.qn = initialise_qn(self.NTerms)
-        self.sn = initialise_sn(self.NTerms)
-        self.wn = initialise_wn(self.NTerms)
-        self.Ei = initialise_Ei(self.MaxFlds)  # energy params
-        self.Ki = initialise_Ki(self.MaxFlds)  # size params
-        self.Gi = initialise_Gi(self.MaxFlds)  # orientation params
-        self.Eij, self.Uij, self.Kij, self.Gij = initialise_ij_arrays(self.MaxFlds)
+        self.Bsnij2 = initialise_Bsnij2(n=self.MaxFlds)
+        self.an = initialise_an(n=self.NTerms)
+        self.bn = initialise_bn(n=self.NTerms)
+        self.kn = initialise_kn(n=self.NTerms)
+        self.un = initialise_un(n=self.NTerms)
+        self.fn = initialise_fn(n=self.NTerms)
+        self.gn = initialise_gn(n=self.NTerms)
+        self.qn = initialise_qn(n=self.NTerms)
+        self.sn = initialise_sn(n=self.NTerms)
+        self.wn = initialise_wn(n=self.NTerms)
+        self.Ei = initialise_Ei(n=self.MaxFlds)  # energy params
+        self.Ki = initialise_Ki(n=self.MaxFlds)  # size params
+        self.Gi = initialise_Gi(n=self.MaxFlds)  # orientation params
+        self.Eij, self.Uij, self.Kij, self.Gij = initialise_ij_arrays(n=self.MaxFlds)
         # quadrupole params
-        self.Qi = initialise_Qi(self.MaxFlds)
-        self.Fi = initialise_Fi(self.MaxFlds)
-        self.Si = initialise_Si(self.MaxFlds)
-        self.Wi = initialise_Wi(self.MaxFlds)
+        self.Qi = initialise_Qi(n=self.MaxFlds)
+        self.Fi = initialise_Fi(n=self.MaxFlds)
+        self.Si = initialise_Si(n=self.MaxFlds)
+        self.Wi = initialise_Wi(n=self.MaxFlds)
         # ideal gas params
-        self.n0i = initialise_n0i(self.MaxFlds)
-        self.th0i = initialise_th0i(self.MaxFlds)
+        self.n0i = initialise_n0i(n=self.MaxFlds)
+        self.th0i = initialise_th0i(n=self.MaxFlds)
         # precalculation of constants
-        self.Ki25, self.Ei25 = initialise_i25_arrays(self.MaxFlds)
-        self.Kij5, self.Uij5, self.Gij5 = initialise_ij5_arrays(self.MaxFlds)
-        self.Csn = initialise_Csn(self.NTerms)
-        self.Tun = initialise_Tun(self.NTerms)
+        self.Ki25, self.Ei25 = initialise_i25_arrays(n=self.MaxFlds)
+        self.Kij5, self.Uij5, self.Gij5 = initialise_ij5_arrays(n=self.MaxFlds)
+        self.Csn = initialise_Csn(n=self.NTerms)
+        self.Tun = initialise_Tun(n=self.NTerms)
 
     def SetupDetail(self):
         """Initialize all the constants and parameters in the DETAIL model."""
