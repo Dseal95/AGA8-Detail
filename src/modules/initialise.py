@@ -313,311 +313,311 @@ def initialise_wn(n):
     return wn
 
 
-def initialise_Ei(n):
+def initialise_ei(n):
     """Initialise Ei(n+1, 1) array with known initial values."""
-    Ei = [0] * (n + 1)
+    ei = [0] * (n + 1)
     # add initial values
-    Ei[1] = 151.3183
-    Ei[2] = 99.73778
-    Ei[3] = 241.9606
-    Ei[4] = 244.1667
-    Ei[5] = 298.1183
-    Ei[6] = 324.0689
-    Ei[7] = 337.6389
-    Ei[8] = 365.5999
-    Ei[9] = 370.6823
-    Ei[10] = 402.636293
-    Ei[11] = 427.72263
-    Ei[12] = 450.325022
-    Ei[13] = 470.840891
-    Ei[14] = 489.558373
-    Ei[15] = 26.95794
-    Ei[16] = 122.7667
-    Ei[17] = 105.5348
-    Ei[18] = 514.0156
-    Ei[19] = 296.355
-    Ei[20] = 2.610111
-    Ei[21] = 119.6299
+    ei[1] = 151.3183
+    ei[2] = 99.73778
+    ei[3] = 241.9606
+    ei[4] = 244.1667
+    ei[5] = 298.1183
+    ei[6] = 324.0689
+    ei[7] = 337.6389
+    ei[8] = 365.5999
+    ei[9] = 370.6823
+    ei[10] = 402.636293
+    ei[11] = 427.72263
+    ei[12] = 450.325022
+    ei[13] = 470.840891
+    ei[14] = 489.558373
+    ei[15] = 26.95794
+    ei[16] = 122.7667
+    ei[17] = 105.5348
+    ei[18] = 514.0156
+    ei[19] = 296.355
+    ei[20] = 2.610111
+    ei[21] = 119.6299
 
-    return Ei
+    return ei
 
 
-def initialise_Fi(n):
+def initialise_fi(n):
     """Initialise Fi(n+1, 1) array with zeros."""
-    Fi = [0] * (n + 1)
+    fi = [0] * (n + 1)
     # add initial values
-    Fi[15] = 1  # high temperature parameter
+    fi[15] = 1  # high temperature parameter
 
-    return Fi
+    return fi
 
 
-def initialise_Gi(n):
+def initialise_gi(n):
     """Initialise Gi(n+1, 1) array with known initial values."""
-    Gi = [0] * (n + 1)
+    gi = [0] * (n + 1)
     # add initial values
-    Gi[2] = 0.027815
-    Gi[3] = 0.189065
-    Gi[4] = 0.0793
-    Gi[5] = 0.141239
-    Gi[6] = 0.256692
-    Gi[7] = 0.281835
-    Gi[8] = 0.332267
-    Gi[9] = 0.366911
-    Gi[10] = 0.289731
-    Gi[11] = 0.337542
-    Gi[12] = 0.383381
-    Gi[13] = 0.427354
-    Gi[14] = 0.469659
-    Gi[15] = 0.034369
-    Gi[16] = 0.021
-    Gi[17] = 0.038953
-    Gi[18] = 0.3325
-    Gi[19] = 0.0885
+    gi[2] = 0.027815
+    gi[3] = 0.189065
+    gi[4] = 0.0793
+    gi[5] = 0.141239
+    gi[6] = 0.256692
+    gi[7] = 0.281835
+    gi[8] = 0.332267
+    gi[9] = 0.366911
+    gi[10] = 0.289731
+    gi[11] = 0.337542
+    gi[12] = 0.383381
+    gi[13] = 0.427354
+    gi[14] = 0.469659
+    gi[15] = 0.034369
+    gi[16] = 0.021
+    gi[17] = 0.038953
+    gi[18] = 0.3325
+    gi[19] = 0.0885
 
-    return Gi
+    return gi
 
 
-def initialise_Ki(n):
+def initialise_ki(n):
     """Initialise Ki(n+1, 1) array with known initial values."""
-    Ki = [0] * (n + 1)
+    ki = [0] * (n + 1)
 
-    Ki[1] = 0.4619255
-    Ki[2] = 0.4479153
-    Ki[3] = 0.4557489
-    Ki[4] = 0.5279209
-    Ki[5] = 0.583749
-    Ki[6] = 0.6406937
-    Ki[7] = 0.6341423
-    Ki[8] = 0.6738577
-    Ki[9] = 0.6798307
-    Ki[10] = 0.7175118
-    Ki[11] = 0.7525189
-    Ki[12] = 0.784955
-    Ki[13] = 0.8152731
-    Ki[14] = 0.8437826
-    Ki[15] = 0.3514916
-    Ki[16] = 0.4186954
-    Ki[17] = 0.4533894
-    Ki[18] = 0.3825868
-    Ki[19] = 0.4618263
-    Ki[20] = 0.3589888
-    Ki[21] = 0.4216551
+    ki[1] = 0.4619255
+    ki[2] = 0.4479153
+    ki[3] = 0.4557489
+    ki[4] = 0.5279209
+    ki[5] = 0.583749
+    ki[6] = 0.6406937
+    ki[7] = 0.6341423
+    ki[8] = 0.6738577
+    ki[9] = 0.6798307
+    ki[10] = 0.7175118
+    ki[11] = 0.7525189
+    ki[12] = 0.784955
+    ki[13] = 0.8152731
+    ki[14] = 0.8437826
+    ki[15] = 0.3514916
+    ki[16] = 0.4186954
+    ki[17] = 0.4533894
+    ki[18] = 0.3825868
+    ki[19] = 0.4618263
+    ki[20] = 0.3589888
+    ki[21] = 0.4216551
 
-    return Ki
+    return ki
 
 
-def initialise_Qi(n):
+def initialise_qi(n):
     """Initialise Qi(n+1, 1) array with known initial values."""
-    Qi = [0] * (n + 1)
+    qi = [0] * (n + 1)
     # add initial values
-    Qi[3] = 0.69
-    Qi[18] = 1.06775
-    Qi[19] = 0.633276
+    qi[3] = 0.69
+    qi[18] = 1.06775
+    qi[19] = 0.633276
 
-    return Qi
+    return qi
 
 
-def initialise_Si(n):
+def initialise_si(n):
     """Initialise Si(n+1, 1) array with known initial values."""
-    Si = [0] * (n + 1)
+    si = [0] * (n + 1)
     # add initial values
-    Si[18] = 1.5822  # Dipole parameter
-    Si[19] = 0.39  # Dipole parameter
+    si[18] = 1.5822  # Dipole parameter
+    si[19] = 0.39  # Dipole parameter
 
-    return Si
+    return si
 
 
-def initialise_Wi(n):
+def initialise_wi(n):
     """Initialise Wi(n+1, 1) array with known initial values."""
-    Wi = [0] * (n + 1)
+    wi = [0] * (n + 1)
     # add initial values
-    Wi[18] = 1  # Association parameter
+    wi[18] = 1  # Association parameter
 
-    return Wi
+    return wi
 
 
-def initialise_Eij(Eij):
+def initialise_eij(eij):
     """Initialise input array Eij(i, j) with known initial conditions."""
-    Eij[1][2] = 0.97164
-    Eij[1][3] = 0.960644
-    Eij[1][5] = 0.994635
-    Eij[1][6] = 1.01953
-    Eij[1][7] = 0.989844
-    Eij[1][8] = 1.00235
-    Eij[1][9] = 0.999268
-    Eij[1][10] = 1.107274
-    Eij[1][11] = 0.88088
-    Eij[1][12] = 0.880973
-    Eij[1][13] = 0.881067
-    Eij[1][14] = 0.881161
-    Eij[1][15] = 1.17052
-    Eij[1][17] = 0.990126
-    Eij[1][18] = 0.708218
-    Eij[1][19] = 0.931484
-    Eij[2][3] = 1.02274
-    Eij[2][4] = 0.97012
-    Eij[2][5] = 0.945939
-    Eij[2][6] = 0.946914
-    Eij[2][7] = 0.973384
-    Eij[2][8] = 0.95934
-    Eij[2][9] = 0.94552
-    Eij[2][15] = 1.08632
-    Eij[2][16] = 1.021
-    Eij[2][17] = 1.00571
-    Eij[2][18] = 0.746954
-    Eij[2][19] = 0.902271
-    Eij[3][4] = 0.925053
-    Eij[3][5] = 0.960237
-    Eij[3][6] = 0.906849
-    Eij[3][7] = 0.897362
-    Eij[3][8] = 0.726255
-    Eij[3][9] = 0.859764
-    Eij[3][10] = 0.855134
-    Eij[3][11] = 0.831229
-    Eij[3][12] = 0.80831
-    Eij[3][13] = 0.786323
-    Eij[3][14] = 0.765171
-    Eij[3][15] = 1.28179
-    Eij[3][17] = 1.5
-    Eij[3][18] = 0.849408
-    Eij[3][19] = 0.955052
-    Eij[4][5] = 1.02256
-    Eij[4][7] = 1.01306
-    Eij[4][9] = 1.00532
-    Eij[4][15] = 1.16446
-    Eij[4][18] = 0.693168
-    Eij[4][19] = 0.946871
-    Eij[5][7] = 1.0049
-    Eij[5][15] = 1.034787
-    Eij[6][15] = 1.3
-    Eij[7][15] = 1.3
-    Eij[10][19] = 1.008692
-    Eij[11][19] = 1.010126
-    Eij[12][19] = 1.011501
-    Eij[13][19] = 1.012821
-    Eij[14][19] = 1.014089
-    Eij[15][17] = 1.1
+    eij[1][2] = 0.97164
+    eij[1][3] = 0.960644
+    eij[1][5] = 0.994635
+    eij[1][6] = 1.01953
+    eij[1][7] = 0.989844
+    eij[1][8] = 1.00235
+    eij[1][9] = 0.999268
+    eij[1][10] = 1.107274
+    eij[1][11] = 0.88088
+    eij[1][12] = 0.880973
+    eij[1][13] = 0.881067
+    eij[1][14] = 0.881161
+    eij[1][15] = 1.17052
+    eij[1][17] = 0.990126
+    eij[1][18] = 0.708218
+    eij[1][19] = 0.931484
+    eij[2][3] = 1.02274
+    eij[2][4] = 0.97012
+    eij[2][5] = 0.945939
+    eij[2][6] = 0.946914
+    eij[2][7] = 0.973384
+    eij[2][8] = 0.95934
+    eij[2][9] = 0.94552
+    eij[2][15] = 1.08632
+    eij[2][16] = 1.021
+    eij[2][17] = 1.00571
+    eij[2][18] = 0.746954
+    eij[2][19] = 0.902271
+    eij[3][4] = 0.925053
+    eij[3][5] = 0.960237
+    eij[3][6] = 0.906849
+    eij[3][7] = 0.897362
+    eij[3][8] = 0.726255
+    eij[3][9] = 0.859764
+    eij[3][10] = 0.855134
+    eij[3][11] = 0.831229
+    eij[3][12] = 0.80831
+    eij[3][13] = 0.786323
+    eij[3][14] = 0.765171
+    eij[3][15] = 1.28179
+    eij[3][17] = 1.5
+    eij[3][18] = 0.849408
+    eij[3][19] = 0.955052
+    eij[4][5] = 1.02256
+    eij[4][7] = 1.01306
+    eij[4][9] = 1.00532
+    eij[4][15] = 1.16446
+    eij[4][18] = 0.693168
+    eij[4][19] = 0.946871
+    eij[5][7] = 1.0049
+    eij[5][15] = 1.034787
+    eij[6][15] = 1.3
+    eij[7][15] = 1.3
+    eij[10][19] = 1.008692
+    eij[11][19] = 1.010126
+    eij[12][19] = 1.011501
+    eij[13][19] = 1.012821
+    eij[14][19] = 1.014089
+    eij[15][17] = 1.1
 
-    return Eij
+    return eij
 
 
-def initialise_Kij(Kij):
+def initialise_kij(kij):
     """Initialise input array Kij(i, j) with known initial conditions."""
     # size parameters
-    Kij[1][2] = 1.00363
-    Kij[1][3] = 0.995933
-    Kij[1][5] = 1.007619
-    Kij[1][7] = 0.997596
-    Kij[1][9] = 1.002529
-    Kij[1][10] = 0.982962
-    Kij[1][11] = 0.983565
-    Kij[1][12] = 0.982707
-    Kij[1][13] = 0.981849
-    Kij[1][14] = 0.980991
-    Kij[1][15] = 1.02326
-    Kij[1][19] = 1.00008
-    Kij[2][3] = 0.982361
-    Kij[2][4] = 1.00796
-    Kij[2][15] = 1.03227
-    Kij[2][19] = 0.942596
-    Kij[3][4] = 1.00851
-    Kij[3][10] = 0.910183
-    Kij[3][11] = 0.895362
-    Kij[3][12] = 0.881152
-    Kij[3][13] = 0.86752
-    Kij[3][14] = 0.854406
-    Kij[3][19] = 1.00779
-    Kij[4][5] = 0.986893
-    Kij[4][15] = 1.02034
-    Kij[4][19] = 0.999969
-    Kij[10][19] = 0.96813
-    Kij[11][19] = 0.96287
-    Kij[12][19] = 0.957828
-    Kij[13][19] = 0.952441
-    Kij[14][19] = 0.948338
+    kij[1][2] = 1.00363
+    kij[1][3] = 0.995933
+    kij[1][5] = 1.007619
+    kij[1][7] = 0.997596
+    kij[1][9] = 1.002529
+    kij[1][10] = 0.982962
+    kij[1][11] = 0.983565
+    kij[1][12] = 0.982707
+    kij[1][13] = 0.981849
+    kij[1][14] = 0.980991
+    kij[1][15] = 1.02326
+    kij[1][19] = 1.00008
+    kij[2][3] = 0.982361
+    kij[2][4] = 1.00796
+    kij[2][15] = 1.03227
+    kij[2][19] = 0.942596
+    kij[3][4] = 1.00851
+    kij[3][10] = 0.910183
+    kij[3][11] = 0.895362
+    kij[3][12] = 0.881152
+    kij[3][13] = 0.86752
+    kij[3][14] = 0.854406
+    kij[3][19] = 1.00779
+    kij[4][5] = 0.986893
+    kij[4][15] = 1.02034
+    kij[4][19] = 0.999969
+    kij[10][19] = 0.96813
+    kij[11][19] = 0.96287
+    kij[12][19] = 0.957828
+    kij[13][19] = 0.952441
+    kij[14][19] = 0.948338
 
-    return Kij
+    return kij
 
 
-def initialise_Uij(Uij):
+def initialise_uij(uij):
     """Initialise input array Uij(i, j) with known initial conditions."""
     # Conformal energy parameters
-    Uij[1][2] = 0.886106
-    Uij[1][3] = 0.963827
-    Uij[1][5] = 0.990877
-    Uij[1][7] = 0.992291
-    Uij[1][9] = 1.00367
-    Uij[1][10] = 1.302576
-    Uij[1][11] = 1.191904
-    Uij[1][12] = 1.205769
-    Uij[1][13] = 1.219634
-    Uij[1][14] = 1.233498
-    Uij[1][15] = 1.15639
-    Uij[1][19] = 0.736833
-    Uij[2][3] = 0.835058
-    Uij[2][4] = 0.816431
-    Uij[2][5] = 0.915502
-    Uij[2][7] = 0.993556
-    Uij[2][15] = 0.408838
-    Uij[2][19] = 0.993476
-    Uij[3][4] = 0.96987
-    Uij[3][10] = 1.066638
-    Uij[3][11] = 1.077634
-    Uij[3][12] = 1.088178
-    Uij[3][13] = 1.098291
-    Uij[3][14] = 1.108021
-    Uij[3][17] = 0.9
-    Uij[3][19] = 1.04529
-    Uij[4][5] = 1.065173
-    Uij[4][6] = 1.25
-    Uij[4][7] = 1.25
-    Uij[4][8] = 1.25
-    Uij[4][9] = 1.25
-    Uij[4][15] = 1.61666
-    Uij[4][19] = 0.971926
-    Uij[10][19] = 1.028973
-    Uij[11][19] = 1.033754
-    Uij[12][19] = 1.038338
-    Uij[13][19] = 1.042735
-    Uij[14][19] = 1.046966
+    uij[1][2] = 0.886106
+    uij[1][3] = 0.963827
+    uij[1][5] = 0.990877
+    uij[1][7] = 0.992291
+    uij[1][9] = 1.00367
+    uij[1][10] = 1.302576
+    uij[1][11] = 1.191904
+    uij[1][12] = 1.205769
+    uij[1][13] = 1.219634
+    uij[1][14] = 1.233498
+    uij[1][15] = 1.15639
+    uij[1][19] = 0.736833
+    uij[2][3] = 0.835058
+    uij[2][4] = 0.816431
+    uij[2][5] = 0.915502
+    uij[2][7] = 0.993556
+    uij[2][15] = 0.408838
+    uij[2][19] = 0.993476
+    uij[3][4] = 0.96987
+    uij[3][10] = 1.066638
+    uij[3][11] = 1.077634
+    uij[3][12] = 1.088178
+    uij[3][13] = 1.098291
+    uij[3][14] = 1.108021
+    uij[3][17] = 0.9
+    uij[3][19] = 1.04529
+    uij[4][5] = 1.065173
+    uij[4][6] = 1.25
+    uij[4][7] = 1.25
+    uij[4][8] = 1.25
+    uij[4][9] = 1.25
+    uij[4][15] = 1.61666
+    uij[4][19] = 0.971926
+    uij[10][19] = 1.028973
+    uij[11][19] = 1.033754
+    uij[12][19] = 1.038338
+    uij[13][19] = 1.042735
+    uij[14][19] = 1.046966
 
-    return Uij
+    return uij
 
 
-def initialise_Gij(Gij):
+def initialise_gij(gij):
     """Initialise input array Gij(i, j) with known initial conditions."""
     # Orientation parameters
-    Gij[1][3] = 0.807653
-    Gij[1][15] = 1.95731
-    Gij[2][3] = 0.982746
-    Gij[3][4] = 0.370296
-    Gij[3][18] = 1.67309
+    gij[1][3] = 0.807653
+    gij[1][15] = 1.95731
+    gij[2][3] = 0.982746
+    gij[3][4] = 0.370296
+    gij[3][18] = 1.67309
 
-    return Gij
+    return gij
 
 
 def initialise_ij_arrays(n):
     """Initialise all ij shape (i, j) arrays for the AGA8 Detail method."""
-    Eij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
-    Uij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
-    Kij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
-    Gij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    eij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    uij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    kij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    gij = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
 
     # initialise with 1s from the 1st index
     for i in range(1, n + 1):
         for j in range(1, n + 1):
-            Eij[i][j] = 1
-            Uij[i][j] = 1
-            Kij[i][j] = 1
-            Gij[i][j] = 1
+            eij[i][j] = 1
+            uij[i][j] = 1
+            kij[i][j] = 1
+            gij[i][j] = 1
 
     # add initial values
-    Eij = initialise_Eij(Eij)  # energy params
-    Uij = initialise_Uij(Uij)  # conformal energy params
-    Kij = initialise_Kij(Kij)  # size params
-    Gij = initialise_Gij(Gij)  # orientation params
+    eij = initialise_eij(eij)  # energy params
+    uij = initialise_uij(uij)  # conformal energy params
+    kij = initialise_kij(kij)  # size params
+    gij = initialise_gij(gij)  # orientation params
 
-    return Eij, Uij, Kij, Gij
+    return eij, uij, kij, gij
 
 
 def initialise_n0i(n):
@@ -867,41 +867,38 @@ def initialise_th0i(n):
     return th0i
 
 
-def initialise_Bs():
+def initialise_bs():
     """Initialise Bs array(18+1, 1) with zeros."""
     return [0] * (18 + 1)
 
 
-def initialise_Bsnij2(n):
+def initialise_bsnij2(n):
     """Initialise Bsnij2 array (n, n 18+1) with zeros."""
-    return [
-        [[0 for _ in range(18 + 1)] for _ in range(n + 1)]
-        for _ in range(n + 1)
-    ]
+    return [[[0 for _ in range(18 + 1)] for _ in range(n + 1)] for _ in range(n + 1)]
 
 
 def initialise_i25_arrays(n):
     """Initialise i25 array(n+1, 1) with zeros."""
-    Ki25 = [0] * (n + 1)
-    Ei25 = [0] * (n + 1)
+    ki25 = [0] * (n + 1)
+    ei25 = [0] * (n + 1)
 
-    return Ki25, Ei25
+    return ki25, ei25
 
 
 def initialise_ij5_arrays(n):
     """Initialise ij5 arrays shape (n+1, n+1) with zeros."""
-    Kij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
-    Uij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
-    Gij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    kij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    uij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+    gij5 = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
 
-    return Kij5, Uij5, Gij5
+    return kij5, uij5, gij5
 
 
-def initialise_Csn(n):
+def initialise_csn(n):
     """Initialise Csn array(n+1, 1) with zeros."""
     return [0] * (n + 1)
 
 
-def initialise_Tun(n):
+def initialise_tun(n):
     """Initialise Tun array(n+1, 1) with zeros."""
     return [0] * (n + 1)
