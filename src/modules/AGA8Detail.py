@@ -464,7 +464,7 @@ class AGA8Detail:
         if self.z is None:
             # density_detail() failed to converge, return object
             return self
-        
+
         # Calculate the ideal gas Helmholtz energy, and its first and second derivatives with respect to temperature.
         self.alpha_0_detail()
         # Calculate the real gas Helmholtz energy, and its derivatives with respect to temperature and/or density.

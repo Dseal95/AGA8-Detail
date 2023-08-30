@@ -1,4 +1,4 @@
-"""molecule.py module contains gas molecule constants used in the AGA8 DETAIL method."""
+"""molecule.py module contains gas compositon used in the AGA8 DETAIL method."""
 
 MmDetail = {
     "Methane": 16.043,
